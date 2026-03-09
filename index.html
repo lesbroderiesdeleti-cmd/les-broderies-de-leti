@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Les Broderies de Leti - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      background: url("images/hero.jpg") center/cover no-repeat;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.5em;
+    }
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+      margin: 40px 20px;
+    }
+    .service-card {
+      width: 220px;
+      text-align: center;
+      padding: 15px;
+      border-radius: 12px;
+      background: #f6f6f6;
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    }
+    .service-card img {
+      width: 60px;
+      margin-bottom: 12px;
+    }
+    .services-grid a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Les Broderies de Leti</h1>
+  <p>Cadeaux uniques et broderie personnalisée</p>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services-naissance.html">Naissance</a>
+    <a href="services-mariage.html">Mariage</a>
+    <a href="services-entreprise.html">Entreprise</a>
+    <a href="services-portraits.html">Portraits</a>
+    <a href="services-deco.html">Décoration</a>
+    <a href="services-anniversaire.html">Anniversaire</a>
+    <a href="services-personnalise.html">Personnalisé</a>
+    <a href="demande-devis.html">Devis</a>
+  </nav>
+</header>
+
+<!-- Bannière principale -->
+<section class="hero">
+  <h2>Broderies personnalisées sur mesure</h2>
+  <p>Créations uniques – Livraison 🇫🇷 – Personnalisation dès 15 €</p>
+</section>
+
+<!-- Services clés -->
+<section>
+  <h2 style="text-align:center; margin-top:40px;">Pourquoi nous choisir ?</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="images/icon-send.png" alt="Envoi">
+      <p>Envoi partout en France</p>
+    </div>
+    <div class="service-card">
+      <img src="images/icon-speed.png" alt="Rapide">
+      <p>Service rapide & soigné</p>
+    </div>
+    <div class="service-card">
+      <img src="images/icon-prenom.png" alt="Personnalisation">
+      <p>Personnalisation dès 15 €</p>
+    </div>
+    <div class="service-card">
+      <a href="https://www.facebook.com/profile.php?id=61575202565990&locale=fr_FR" target="_blank">
+        <img src="images/icon-facebook.png" alt="Facebook">
+        <p>Retrouvez-nous sur Facebook</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Galerie -->
+<section>
+  <h2>Nos réalisations</h2>
+  <div class="gallery">
+    <img src="images/broderie1.jpg" alt="Réa 1">
+    <img src="images/broderie2.jpg" alt="Réa 2">
+    <img src="images/broderie3.jpg" alt="Réa 3">
+    <img src="images/broderie4.jpg" alt="Réa 4">
+  </div>
+</section>
+
+<!-- Liens services -->
+<section>
+  <h2>Nos services détaillés</h2>
+  <ul>
+    <li><a href="services-naissance.html">Cadeaux naissance</a></li>
+    <li><a href="services-mariage.html">Cadeaux mariage</a></li>
+    <li><a href="services-entreprise.html">Broderie entreprise</a></li>
+    <li><a href="services-portraits.html">Portraits brodés</a></li>
+    <li><a href="services-deco.html">Décoration / simili cuir</a></li>
+    <li><a href="services-anniversaire.html">Cadeaux anniversaire</a></li>
+    <li><a href="services-personnalise.html">Cadeau personnalisé</a></li>
+  </ul>
+</section>
+
+<!-- Liens villes -->
+<section>
+  <h2>Nos zones d’intervention</h2>
+  <ul>
+    <li><a href="ville-lucon.html">Luçon</a></li>
+    <li><a href="ville-roche-sur-yon.html">La Roche-sur-Yon</a></li>
+    <li><a href="ville-vendee.html">Vendée</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Contact / Devis</h2>
+  <p>Envie d’un devis personnalisé ? <a href="demande-devis.html">Cliquez ici</a> pour nous envoyer votre projet.</p>
+</section>
+
+</body>
+</html>

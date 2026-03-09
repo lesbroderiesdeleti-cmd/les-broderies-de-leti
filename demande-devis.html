@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Demande de devis - Les Broderies de Leti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    form {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f6f6f6;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Poppins', sans-serif;
+    }
+    form button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #7a5ca6;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #5a3e91;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Les Broderies de Leti</h1>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services-naissance.html">Naissance</a>
+    <a href="services-mariage.html">Mariage</a>
+    <a href="services-entreprise.html">Entreprise</a>
+    <a href="services-portraits.html">Portraits</a>
+    <a href="services-deco.html">Décoration</a>
+    <a href="services-anniversaire.html">Anniversaire</a>
+    <a href="services-personnalise.html">Personnalisé</a>
+    <a href="demande-devis.html">Devis</a>
+  </nav>
+</header>
+
+<section>
+  <h2 style="text-align:center; margin-top:40px;">Demande de devis</h2>
+  <form action="mailto:contact@broderie.fr" method="post" enctype="text/plain">
+    <label for="nom">Nom et prénom :</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telephone">Téléphone :</label>
+    <input type="tel" id="telephone" name="telephone">
+
+    <label for="service">Service souhaité :</label>
+    <select id="service" name="service">
+      <option value="naissance">Cadeaux naissance</option>
+      <option value="mariage">Cadeaux mariage</option>
+      <option value="entreprise">Broderie entreprise</option>
+      <option value="portraits">Portraits brodés</option>
+      <option value="deco">Décoration / simili cuir</option>
+      <option value="anniversaire">Cadeaux anniversaire</option>
+      <option value="personnalise">Cadeau personnalisé</option>
+    </select>
+
+    <label for="message">Votre message :</label>
+    <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet...motif, logo nombre de caractères pour une personnalisation prénom ou appelez pour plus de renseignements" required></textarea>
+
+    <button type="submit">Envoyer ma demande</button>
+  </form>
+</section>
+
+<footer>
+  <p>📍 Adresse : 12 la métrière 85480 thorigny, Vendée</p>
+  <p>📞 Téléphone : 06 59 55 81 47 | ✉️ Email :lesbroderiesdeleti@gmail.com</p>
+  <p>🕒 Horaires : Lundi – vendredi, 9h – 19h</p>
+  <p>🌐 <a href="https://www.facebook.com/profile.php?id=61575202565990&locale=fr_FR" target="_blank" style="color:white; text-decoration:underline;">Page Facebook</a></p>
+</footer>
+
+</body>
+</html>

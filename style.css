@@ -1,0 +1,76 @@
+/* Import de la police Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Corps de la page */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    background: #fafafa;
+}
+
+/* En-tête et navigation */
+header {
+    background: #7a5ca6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background: #7a5ca6;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #5a3e91;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #7a5ca6;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Galerie avec images en entier sans déformation */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 250px;        /* largeur fixe */
+    height: 250px;       /* hauteur fixe */
+    object-fit: contain;  /* garde la proportion originale sans couper */
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 800px) {
+    .gallery img {
+        width: 80%;
+        max-width: 300px;
+        height: auto;       /* laisse la hauteur s’adapter pour mobile */
+        object-fit: contain; /* garde proportion originale */
+    }
+}
