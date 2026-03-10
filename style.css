@@ -164,10 +164,35 @@ h2{
 font-size:22px;
 }
 
+
+
+}/* Curseur pour montrer que les images sont cliquables */
+.gallery img {
+  cursor: pointer;
 }
-.gallery img{
-cursor:pointer;
+
+/* Lightbox : fond noir + image centrée */
+.lightbox {
+  display: none; /* caché par défaut */
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
 }
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  cursor: pointer;
 }
+
+
 
 
