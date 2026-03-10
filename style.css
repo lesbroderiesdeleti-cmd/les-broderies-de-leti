@@ -81,12 +81,14 @@ h2 {
 }
 
 .gallery img {
-  width: 100%;       /* flexible pour conteneur */
-  max-width: 350px;  /* taille max sur grand écran */
+  width: 100%;
+  max-width: 350px;
   height: auto;
+  object-fit: contain;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+}
 }
 
 .gallery img:hover {
@@ -216,3 +218,4 @@ h2 {
     font-size: 22px;
   }
 }
+
