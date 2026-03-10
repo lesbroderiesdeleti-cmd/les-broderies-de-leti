@@ -103,10 +103,10 @@
 <section>
   <h2>Nos réalisations</h2>
   <div class="gallery">
-    <img src="images/broderie1.jpg" alt="Réa 1">
-    <img src="images/broderie2.jpg" alt="Réa 2">
-    <img src="images/broderie3.jpg" alt="Réa 3">
-    <img src="images/broderie4.jpg" alt="Réa 4">
+    <img src="images/broderie1.jpg" alt="coussin brodés tete de chien personnalisé la roche sur yon">
+    <img src="images/broderie2.jpg" alt="cheval brodé sur veste la roche sur yon">
+    <img src="images/broderie3.jpg" alt="broderie polo effet tatouage la roche sur yon">
+    <img src="images/broderie4.jpg" alt="tablier pesonnalisé humour la roche sur yon">
   </div>
 </section>
 
@@ -140,7 +140,23 @@
 </section>
 <div class="lightbox" id="lightbox">
   <img src="" alt="Agrandissement">
-</div>
+</div><script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox.querySelector('img');
+  const galleryImages = document.querySelectorAll('.gallery img');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+</script>
 </body>
 
 </html>
+
