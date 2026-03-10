@@ -3,52 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Les Broderies de Leti - Accueil</title>
+  <meta name="description" content="Cadeaux uniques et broderie personnalisée sur mesure.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .hero {
-      background: url("images/hero.jpg") center/cover no-repeat;
-      padding: 120px 20px;
-      text-align: center;
-      color: white;
-    }
-    .hero h2 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.5em;
-    }
-    .services-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 30px;
-      margin: 40px 20px;
-    }
-    .service-card {
-      width: 220px;
-      text-align: center;
-      padding: 15px;
-      border-radius: 12px;
-      background: #f6f6f6;
-      box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .service-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
-    }
-    .service-card img {
-      width: 60px;
-      margin-bottom: 12px;
-    }
-    .services-grid a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-    }
-  </style>
 </head>
 <body>
 
@@ -69,14 +26,14 @@
 </header>
 
 <!-- Bannière principale -->
-<section class="hero">
+<section class="hero" style="background-image: url('images/hero.jpg');">
   <h2>Broderies personnalisées sur mesure</h2>
   <p>Créations uniques – Livraison 🇫🇷 – Personnalisation dès 15 €</p>
 </section>
 
 <!-- Services clés -->
 <section>
-  <h2 style="text-align:center; margin-top:40px;">Pourquoi nous choisir ?</h2>
+  <h2>Pourquoi nous choisir ?</h2>
   <div class="services-grid">
     <div class="service-card">
       <img src="images/icon-send.png" alt="Envoi">
@@ -134,13 +91,18 @@
   </ul>
 </section>
 
+<!-- Contact / Devis -->
 <section>
   <h2>Contact / Devis</h2>
   <p>Envie d’un devis personnalisé ? <a href="demande-devis.html">Cliquez ici</a> pour nous envoyer votre projet.</p>
 </section>
+
+<!-- Lightbox -->
 <div class="lightbox" id="lightbox">
   <img src="" alt="Agrandissement">
-</div><script>
+</div>
+
+<script>
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = lightbox.querySelector('img');
   const galleryImages = document.querySelectorAll('.gallery img');
@@ -156,7 +118,13 @@
     lightbox.style.display = 'none';
   });
 </script>
+
+<footer>
+  <p>📍 Adresse : 12 la métrière 85480 Thorigny, Vendée</p>
+  <p>📞 Téléphone : 06 59 55 81 47 | ✉️ Email : lesbroderiesdeleti@gmail.com</p>
+  <p>🕒 Horaires : Lundi – vendredi, 9h – 19h</p>
+  <p>🌐 <a href="https://www.facebook.com/profile.php?id=61575202565990&locale=fr_FR" target="_blank">Page Facebook</a></p>
+</footer>
+
 </body>
-
 </html>
-
