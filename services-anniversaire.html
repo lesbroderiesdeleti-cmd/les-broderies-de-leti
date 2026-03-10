@@ -30,15 +30,31 @@
   <h2>Cadeaux anniversaire</h2>
   <p>Broderies personnalisées pour tous types de cadeaux d'anniversaire : textiles, accessoires et objets décoratifs.</p>
   <div class="gallery">
-    <img src="images/anniversaire1.jpg" alt="Cadeau anniversaire brodé 1">
-    <img src="images/anniversaire2.jpg" alt="Cadeau textile brodé 2">
-    <img src="images/anniversaire3.jpg" alt="Cadeau anniversaire brodé 3">
-    <img src="images/anniversaire4.jpg" alt="Cadeau anniversaire brodé 4">
+    <img src="images/anniversaire1.jpg" alt="sac cadeau anniversaire brodé 1">
+    <img src="images/anniversaire2.jpg" alt="Cadeau serviette de toilette brodé 2">
+    <img src="images/anniversaire3.jpg" alt="draps de bain personnalisé cadeau brodé 3">
+    <img src="images/anniversaire4.jpg" alt="drap de plage personnalisé brodé 4">
   </div>
 </section>
 <div class="lightbox" id="lightbox">
   <img src="" alt="Agrandissement">
-</div>
+</div><script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox.querySelector('img');
+  const galleryImages = document.querySelectorAll('.gallery img');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+</script>
 </body>
 
 </html>
+
