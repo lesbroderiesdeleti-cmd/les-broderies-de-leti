@@ -165,6 +165,9 @@ font-size:22px;
 }
 
 }
-
+.gallery img{
+cursor:pointer;
 }
+}
+
 
