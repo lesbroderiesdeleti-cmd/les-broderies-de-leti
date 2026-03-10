@@ -1,6 +1,11 @@
+/* =========================
+   Google Fonts
+========================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* GLOBAL */
+/* =========================
+   Body
+========================= */
 body {
   font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
@@ -8,7 +13,9 @@ body {
   color: #333;
 }
 
-/* HEADER */
+/* =========================
+   Header
+========================= */
 header {
   background: #7a5ca6;
   color: white;
@@ -21,13 +28,12 @@ header h1 {
   font-size: 2em;
 }
 
-header p {
-  margin: 5px 0 0 0;
-}
-
-/* NAVIGATION */
+/* =========================
+   Navigation
+========================= */
 nav {
   margin-top: 10px;
+  text-align: center;
 }
 
 nav a {
@@ -46,7 +52,9 @@ nav a:hover {
   background: #5a3e91;
 }
 
-/* SECTIONS */
+/* =========================
+   Sections
+========================= */
 section {
   padding: 40px 20px;
 }
@@ -57,7 +65,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* GALERIES */
+/* =========================
+   Gallery
+========================= */
 .gallery {
   display: flex;
   justify-content: center;
@@ -78,7 +88,9 @@ h2 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* SERVICES */
+/* =========================
+   Services Grid
+========================= */
 .services-grid {
   display: flex;
   flex-wrap: wrap;
@@ -92,8 +104,13 @@ h2 {
   padding: 15px;
   border-radius: 12px;
   background: #f6f6f6;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
 }
 
 .service-card img {
@@ -101,12 +118,9 @@ h2 {
   margin-bottom: 12px;
 }
 
-.service-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* HERO */
+/* =========================
+   Hero Section
+========================= */
 .hero {
   padding: 120px 20px;
   text-align: center;
@@ -115,22 +129,20 @@ h2 {
   background-position: center;
 }
 
-/* FOOTER */
-footer {
-  background: #7a5ca6;
-  color: white;
-  text-align: center;
-  padding: 20px;
+.hero h2 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
 }
 
-footer a {
-  color: white;
-  text-decoration: underline;
+.hero p {
+  font-size: 1.5em;
 }
 
-/* LIGHTBOX */
+/* =========================
+   Lightbox
+========================= */
 .lightbox {
-  display: none;
+  display: none; /* caché par défaut */
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -150,40 +162,52 @@ footer a {
   cursor: pointer;
 }
 
-/* RESPONSIVE */
+/* =========================
+   Responsive (Mobile)
+========================= */
 @media (max-width: 700px) {
+
   nav {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   nav a {
+    display: block;
     width: 90%;
     margin: 5px 0;
     text-align: center;
   }
+
   .services-grid {
     flex-direction: column;
     align-items: center;
   }
+
   .service-card {
     width: 90%;
   }
+
   .gallery img {
     width: 90%;
     max-width: 320px;
   }
+
   section {
-    padding: 20px;
+    padding: 25px 15px;
   }
-  h2 {
-    font-size: 22px;
-  }
+
   .hero h2 {
     font-size: 1.8em;
   }
+
   .hero p {
     font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 22px;
   }
 }
 
