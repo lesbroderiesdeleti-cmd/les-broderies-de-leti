@@ -1,3 +1,4 @@
+
 /* =========================
    Google Fonts
 ========================= */
@@ -26,6 +27,11 @@ header {
 header h1 {
   margin: 0;
   font-size: 2em;
+}
+
+header p {
+  margin-top: 5px;
+  font-weight: 400;
 }
 
 /* =========================
@@ -65,31 +71,15 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* =========================
-   Gallery
-========================= */
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.gallery img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+h3 {
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 /* =========================
-   Services Grid (si utilisé)
+   Services Grid
 ========================= */
 .services-grid {
   display: flex;
@@ -136,13 +126,59 @@ h2 {
 
 .hero p {
   font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   Call Button
+========================= */
+.call-button {
+  display: block;
+  width: 250px;
+  margin: 20px auto;
+  text-align: center;
+  background: #7a5ca6;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background 0.3s;
+}
+
+.call-button:hover {
+  background: #5a3e91;
+}
+
+/* =========================
+   Gallery
+========================= */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* =========================
    Lightbox
 ========================= */
 .lightbox {
-  display: none; /* caché par défaut */
+  display: none;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -163,44 +199,17 @@ h2 {
 }
 
 /* =========================
-   Bouton Appeler Maintenant
-========================= */
-.call-now {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #7a5ca6;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1.1em;
-  text-decoration: none;
-  z-index: 999;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: background 0.3s;
-}
-
-.call-now:hover {
-  background: #5a3e91;
-}
-
-/* =========================
    Footer
 ========================= */
 footer {
+  background: #7a5ca6;
+  color: white;
   text-align: center;
   padding: 20px;
-  background: #f6f6f6;
-  font-size: 0.9em;
 }
 
 footer a {
-  color: #7a5ca6;
-  text-decoration: none;
-}
-
-footer a:hover {
+  color: white;
   text-decoration: underline;
 }
 
@@ -250,6 +259,16 @@ footer a:hover {
 
   h2 {
     font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .call-button {
+    width: 90%;
+    font-size: 1em;
+    padding: 12px;
   }
 }
 
