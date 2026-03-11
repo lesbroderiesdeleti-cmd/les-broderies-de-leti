@@ -2,119 +2,204 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les Broderies de Leti - Accueil</title>
-  <meta name="description" content="Broderies personnalisées sur mesure, cadeaux uniques pour toutes occasions.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Les Broderies de Leti</title>
+
+<meta name="description" content="Broderies personnalisées en Vendée : cadeaux naissance, mariage, anniversaire, entreprise et portraits brodés.">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <header>
-  <h1>Les Broderies de Leti</h1>
-  <p>Cadeaux uniques et broderie personnalisée</p>
-  <nav>
-    <a href="ville-lucon.html">Luçon</a>
-    <a href="ville-roche-sur-yon.html">La Roche-sur-Yon</a>
-    <a href="ville-vendee.html">Vendée</a>
-  </nav>
+
+<h1>Les Broderies de Leti</h1>
+
+<p>Broderies personnalisées en Vendée</p>
+
+<nav>
+<a href="ville-lucon.html">Luçon</a>
+<a href="ville-roche-sur-yon.html">La Roche-sur-Yon</a>
+<a href="ville-vendee.html">Vendée</a>
+</nav>
+
 </header>
 
-<!-- Hero -->
+
 <section class="hero">
-  <h2>Broderies personnalisées sur mesure</h2>
-  <p>Créations uniques – Livraison 🇫🇷 – Personnalisation dès 15 €</p>
-  <a href="tel:+33659558147" class="call-button">📞 Appeler maintenant</a>
+
+<h2>Créations brodées personnalisées</h2>
+
+<p>Cadeaux uniques pour toutes occasions</p>
+
+<a class="call" href="tel:+33659558147">📞 Appeler maintenant</a>
+
 </section>
 
-<!-- Sections / Galeries -->
+
+
 <section>
-  <h2>Nos créations par thème</h2>
 
-  <h3>Cadeaux anniversaire</h3>
-  <div class="gallery">
-    <img src="images/anniversaire1.jpg" alt="sac cadeau anniversaire brodé 1">
-    <img src="images/anniversaire2.jpg" alt="Cadeau serviette de toilette brodé 2">
-    <img src="images/anniversaire3.jpg" alt="draps de bain personnalisé cadeau brodé 3">
-    <img src="images/anniversaire4.jpg" alt="drap de plage personnalisé brodé 4">
-  </div>
+<h2>Nos créations</h2>
 
-  <h3>Cadeaux naissance</h3>
-  <div class="gallery">
-    <img src="images/naissance1.jpg" alt="Body brodé naissance 1">
-    <img src="images/naissance2.jpg" alt="Plaid brodé naissance 2">
-    <img src="images/naissance3.jpg" alt="Broderie naissance 3">
-    <img src="images/naissance4.jpg" alt="Broderie bavoir personnalisée naissance 4">
-  </div>
 
-  <h3>Cadeaux mariage</h3>
-  <div class="gallery">
-    <img src="images/mariage1.jpg" alt="Taie d’oreiller brodée mariage 1">
-    <img src="images/mariage2.jpg" alt="serviette de table brodée mariage 2">
-  </div>
 
-  <h3>Broderie entreprise</h3>
-  <div class="gallery">
-    <img src="images/entreprise1.jpg" alt="Vêtement entreprise brodé 1">
-    <img src="images/entreprise2.jpg" alt="polo et veste brodé entreprise 2">
-    <img src="images/entreprise3.jpg" alt="Broderies sweat pull entreprise 3">
-    <img src="images/entreprise4.jpg" alt="Broderie cote de travail entreprise 4">
-  </div>
+<h3>Cadeaux anniversaire</h3>
 
-  <h3>Portraits brodés</h3>
-  <div class="gallery">
-    <img src="images/portrait1.jpg" alt="Portrait chien sur photo brodé 1">
-    <img src="images/portrait2.jpg" alt="Portrait personne brodé 2">
-    <img src="images/portrait3.jpg" alt="Portrait animaux la roche sur yon brodé 3">
-    <img src="images/portrait4.jpg" alt="Portrait chien noël brodé 4">
-  </div>
+<div class="gallery">
 
-  <h3>Décoration / Simili cuir</h3>
-  <div class="gallery">
-    <img src="images/deco1.jpg" alt="Cadre brodé arbre de vie décoration 1">
-    <img src="images/deco2.jpg" alt="Broderie écharpe de bapteme la roche sur yon 2">
-    <img src="images/deco3.jpg" alt="Broderie betty boop simili cuir décoration 3">
-    <img src="images/deco4.jpg" alt="Broderie papillon todbag la roche sur yon décoration 4">
-  </div>
+<img src="images/anniversaire1.jpg" alt="sac cadeau anniversaire brodé">
+<img src="images/anniversaire2.jpg" alt="serviette brodée anniversaire">
+<img src="images/anniversaire3.jpg" alt="drap de bain brodé">
+<img src="images/anniversaire4.jpg" alt="drap de plage brodé">
 
-  <h3>Cadeau personnalisé</h3>
-  <div class="gallery">
-    <img src="images/perso1.jpg" alt="cadeau t-shirt larochesuryon humour 1">
-    <img src="images/perso2.jpg" alt="taie oreiller personnalisée enfant 2">
-    <img src="images/perso3.jpg" alt="T-shirt personnalisé la roche sur yon 3">
-    <img src="images/perso4.jpg" alt="equipement sportif personnalisé 4">
-  </div>
-</section>
-
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
-  <img src="" alt="Agrandissement">
 </div>
 
-<script>
-  // Lightbox
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = lightbox.querySelector('img');
-  document.querySelectorAll('.gallery img').forEach(img => {
-    img.addEventListener('click', e => {
-      e.preventDefault(); // Bloque le retour du navigateur
-      lightbox.style.display = 'flex';
-      lightboxImg.src = img.src;
-    });
-  });
-  lightbox.addEventListener('click', () => lightbox.style.display = 'none');
-</script>
+
+
+<h3>Cadeaux naissance</h3>
+
+<div class="gallery">
+
+<img src="images/naissance1.jpg" alt="body brodé naissance">
+<img src="images/naissance2.jpg" alt="plaid brodé bébé">
+<img src="images/naissance3.jpg" alt="cadeau naissance personnalisé">
+<img src="images/naissance4.jpg" alt="bavoir brodé naissance">
+
+</div>
+
+
+
+<h3>Cadeaux mariage</h3>
+
+<div class="gallery">
+
+<img src="images/mariage1.jpg" alt="taie oreiller mariage brodée">
+<img src="images/mariage2.jpg" alt="serviette mariage brodée">
+
+</div>
+
+
+
+<h3>Broderie entreprise</h3>
+
+<div class="gallery">
+
+<img src="images/entreprise1.jpg" alt="vetement entreprise brodé">
+<img src="images/entreprise2.jpg" alt="polo brodé entreprise">
+<img src="images/entreprise3.jpg" alt="sweat entreprise brodé">
+<img src="images/entreprise4.jpg" alt="tenue travail brodée">
+
+</div>
+
+
+
+<h3>Portraits brodés</h3>
+
+<div class="gallery">
+
+<img src="images/portrait1.jpg" alt="portrait chien brodé">
+<img src="images/portrait2.jpg" alt="portrait personne brodé">
+<img src="images/portrait3.jpg" alt="portrait animal brodé">
+<img src="images/portrait4.jpg" alt="portrait chien noel brodé">
+
+</div>
+
+
+
+<h3>Décoration / Simili cuir</h3>
+
+<div class="gallery">
+
+<img src="images/deco1.jpg" alt="cadre brodé décoration">
+<img src="images/deco2.jpg" alt="broderie baptême">
+<img src="images/deco3.jpg" alt="broderie simili cuir">
+<img src="images/deco4.jpg" alt="tote bag brodé">
+
+</div>
+
+
+
+<h3>Cadeaux personnalisés</h3>
+
+<div class="gallery">
+
+<img src="images/perso1.jpg" alt="t shirt personnalisé">
+<img src="images/perso2.jpg" alt="taie oreiller personnalisée">
+<img src="images/perso3.jpg" alt="t shirt brodé personnalisé">
+<img src="images/perso4.jpg" alt="vetement sport personnalisé">
+
+</div>
+
+</section>
+
+
+
+<div class="lightbox" id="lightbox">
+<img src="">
+</div>
+
+
 
 <footer>
-  <p>📍 Adresse : 12 la métrière 85480 Thorigny, Vendée</p>
-  <p>📞 Téléphone : 06 59 55 81 47 | ✉️ Email : lesbroderiesdeleti@gmail.com</p>
-  <p>🕒 Horaires : Lundi – vendredi, 9h – 19h</p>
-  <p>🌐 <a href="https://www.facebook.com/profile.php?id=61575202565990&locale=fr_FR" target="_blank">Page Facebook</a></p>
+
+<p>📍 12 la métrière 85480 Thorigny</p>
+
+<p>📞 06 59 55 81 47</p>
+
+<p>✉️ lesbroderiesdeleti@gmail.com</p>
+
+<p>
+<a href="https://www.facebook.com/profile.php?id=61575202565990">Facebook</a>
+</p>
+
 </footer>
+
+
+
+<script>
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".gallery img").forEach(img=>{
+
+img.addEventListener("click",()=>{
+
+lightbox.style.display="flex";
+lightboxImg.src=img.src;
+
+history.pushState({lightbox:true},"");
+
+});
+
+});
+
+function closeLightbox(){
+
+lightbox.style.display="none";
+
+}
+
+lightbox.addEventListener("click",closeLightbox);
+
+window.addEventListener("popstate",()=>{
+
+if(lightbox.style.display==="flex"){
+closeLightbox();
+}
+
+});
+
+</script>
+
 
 </body>
 </html>
-
 
 
