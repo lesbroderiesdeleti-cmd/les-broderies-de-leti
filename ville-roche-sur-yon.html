@@ -1,123 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Les Broderies de Leti - La Roche-sur-Yon</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Découvrez nos broderies personnalisées à La Roche-sur-Yon et alentours.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    section {
-      padding: 40px 20px;
-    }
 
-    h2 {
-      color: #7a5ca6;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+<title>Broderie personnalisée La Roche-sur-Yon | Les Broderies de Leti</title>
 
-    .gallery img {
-      width: 250px;
-      height: auto;
-      border-radius: 10px;
-      transition: 0.3s;
-      cursor: pointer;
-    }
+<meta name="description" content="Broderie personnalisée à La Roche-sur-Yon en Vendée. Cadeaux brodés pour naissance, mariage, anniversaire et entreprises.">
 
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
+<link rel="stylesheet" href="style.css">
 
-    .lightbox {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.9);
-      justify-content: center;
-      align-items: center;
-    }
-
-    .lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 5px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      cursor: pointer;
-    }
-
-    @media (max-width: 700px) {
-      .gallery img {
-        width: 90%;
-        max-width: 320px;
-      }
-      section {
-        padding: 25px 15px;
-      }
-    }
-  </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Les Broderies de Leti</h1>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="services-naissance.html">Cadeaux naissance</a>
-    <a href="services-mariage.html">Cadeaux mariage</a>
-    <a href="services-entreprise.html">Broderie entreprise</a>
-    <a href="services-portraits.html">Portraits brodés</a>
-    <a href="services-deco.html">Décoration / simili cuir</a>
-    <a href="services-anniversaire.html">Cadeaux anniversaire</a>
-    <a href="services-personnalise.html">Cadeau personnalisé</a>
-  </nav>
+
+<h1>Les Broderies de Leti</h1>
+
+<nav>
+<a href="index.html">Accueil</a>
+<a href="ville-lucon.html">Luçon</a>
+<a href="ville-vendee.html">Vendée</a>
+</nav>
+
 </header>
 
 <section>
-  <h2>Visitez nos créations à La Roche-sur-Yon</h2>
-  <p>Nous réalisons toutes nos broderies personnalisées dans la région de La Roche-sur-Yon et alentours. Découvrez nos créations uniques sur textiles et cadeaux.</p>
-  <div class="gallery">
-    <img src="images/roche1.jpg" alt="Broderie La Roche-sur-Yon 1">
-    <img src="images/roche2.jpg" alt="Broderie La Roche-sur-Yon 2">
-    <img src="images/roche3.jpg" alt="Broderie La Roche-sur-Yon 3">
-    <img src="images/roche4.jpg" alt="Broderie La Roche-sur-Yon 4">
-  </div>
+
+<h2>Broderie personnalisée à La Roche-sur-Yon</h2>
+
+<p>
+Les Broderies de Leti réalise des broderies personnalisées pour les habitants
+de La Roche-sur-Yon et de la Vendée.
+</p>
+
+<p>
+Nous créons des cadeaux brodés pour naissance, mariage, anniversaire,
+entreprises et portraits brodés.
+</p>
+
+<p>
+Nos clients situés à La Roche-sur-Yon apprécient les broderies sur :
+</p>
+
+<ul>
+<li>Serviettes brodées</li>
+<li>Textile naissance personnalisé</li>
+<li>Vêtements et polos entreprise brodés</li>
+<li>Portraits brodés</li>
+</ul>
+
+<p>
+Notre atelier est situé en Vendée et nous réalisons des broderies personnalisées
+pour toute la région.
+</p>
+
+<a class="btn" href="tel:+33659558147">📞 Appeler</a>
+
 </section>
 
-<div class="lightbox" id="lightbox">
-  <img src="" alt="Agrandissement">
-</div>
+<footer>
 
-<script>
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = lightbox.querySelector('img');
-  const galleryImages = document.querySelectorAll('.gallery img');
+<p>📍 12 la métrière 85480 Thorigny</p>
+<p>📞 06 59 55 81 47</p>
 
-  galleryImages.forEach(img => {
-    img.addEventListener('click', () => {
-      lightbox.style.display = 'flex';
-      lightboxImg.src = img.src;
-    });
-  });
-
-  lightbox.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-  });
-</script>
+</footer>
 
 </body>
 </html>
-
