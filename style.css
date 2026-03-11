@@ -1,5 +1,3 @@
-
-
 /* =========================
    Google Fonts
 ========================= */
@@ -30,6 +28,14 @@ header h1 {
   font-size: 2em;
 }
 
+header p {
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+/* =========================
+   Navigation
+========================= */
 nav {
   margin-top: 10px;
   text-align: center;
@@ -69,11 +75,11 @@ nav a:hover {
 
 .hero p {
   font-size: 1.5em;
+  margin-bottom: 15px;
 }
 
 .call-button {
   display: inline-block;
-  margin: 20px auto 0;
   background: #7a5ca6;
   color: white;
   font-weight: 600;
@@ -98,13 +104,13 @@ section {
 h2 {
   color: #7a5ca6;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 h3 {
-  color: #5a3e91;
-  text-align: center;
+  color: #333;
   margin-top: 30px;
+  text-align: center;
 }
 
 /* =========================
@@ -112,19 +118,18 @@ h3 {
 ========================= */
 .gallery {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 40px;
+  margin-top: 15px;
 }
 
 .gallery img {
-  width: 100%;
-  max-width: 250px;
+  width: 250px;
   height: auto;
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .gallery img:hover {
@@ -161,13 +166,18 @@ h3 {
 ========================= */
 footer {
   text-align: center;
-  background: #7a5ca6;
-  color: white;
-  padding: 20px;
+  padding: 30px 20px;
+  background: #f6f6f6;
+  color: #333;
+  font-size: 0.95em;
 }
 
 footer a {
-  color: white;
+  color: #7a5ca6;
+  text-decoration: none;
+}
+
+footer a:hover {
   text-decoration: underline;
 }
 
@@ -185,23 +195,21 @@ footer a {
     margin: 5px 0;
     text-align: center;
   }
-  .gallery img {
-    width: 90%;
-    max-width: 320px;
-  }
-  section {
-    padding: 25px 15px;
-  }
   .hero h2 {
     font-size: 1.8em;
   }
   .hero p {
     font-size: 1.2em;
   }
+  section {
+    padding: 25px 15px;
+  }
+  .gallery img {
+    width: 90%;
+    max-width: 320px;
+  }
   h2 {
     font-size: 22px;
   }
-  h3 {
-    font-size: 18px;
-  }
 }
+
