@@ -69,31 +69,27 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+/* ===== GALERIE PHOTOS ===== */
 
-/* =========================
-   Gallery
-========================= */
 .gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
 }
 
-.gallery img {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
+.gallery img{
+  width:100%;
+  height:auto;
+  border-radius:10px;
+  cursor:pointer;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.gallery img:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 /* =========================
@@ -218,4 +214,5 @@ h2 {
     font-size: 22px;
   }
 }
+
 
