@@ -1,15 +1,15 @@
 body{
-font-family:Arial, sans-serif;
+font-family:Arial;
 margin:0;
 background:#fafafa;
-color:#333;
 text-align:center;
+color:#333;
 }
 
 header{
 background:#7a5ca6;
 color:white;
-padding:20px;
+padding:25px;
 }
 
 nav a{
@@ -24,9 +24,9 @@ padding:80px 20px;
 background:#eee;
 }
 
-.call{
+.btn{
 display:inline-block;
-margin-top:20px;
+margin:10px;
 padding:12px 20px;
 background:#7a5ca6;
 color:white;
@@ -35,8 +35,17 @@ border-radius:6px;
 font-weight:bold;
 }
 
+.whatsapp{
+background:#25D366;
+}
+
 section{
 padding:40px 20px;
+}
+
+.intro{
+max-width:800px;
+margin:auto;
 }
 
 h2{
@@ -47,31 +56,32 @@ h3{
 margin-top:40px;
 }
 
-/* galerie */
+/* GALERIE */
 
 .gallery{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
+max-width:1200px;
+margin:auto;
+
 }
 
 .gallery img{
+
 width:100%;
-max-width:300px;
 height:auto;
+object-fit:contain;
 border-radius:8px;
 cursor:pointer;
-transition:transform .2s;
+
 }
 
-.gallery img:hover{
-transform:scale(1.05);
-}
-
-/* lightbox */
+/* LIGHTBOX */
 
 .lightbox{
+
 display:none;
 position:fixed;
 top:0;
@@ -81,27 +91,43 @@ height:100%;
 background:rgba(0,0,0,0.9);
 justify-content:center;
 align-items:center;
+
 }
 
 .lightbox img{
+
 max-width:95%;
 max-height:95%;
+object-fit:contain;
+
 }
 
 footer{
-padding:30px;
+
 background:#eee;
+padding:30px;
 font-size:14px;
+
+}
+
+iframe{
+
+max-width:900px;
+margin:auto;
+display:block;
+
 }
 
 @media(max-width:700px){
-
-.gallery img{
-max-width:90%;
-}
 
 .hero{
 padding:60px 15px;
 }
 
+.gallery{
+grid-template-columns:1fr;
 }
+
+}
+
+
