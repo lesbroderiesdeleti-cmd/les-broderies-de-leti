@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- Page d'accueil -->
   <url>
-    <loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/index.html</loc>
+    <loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/</loc>
     <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
