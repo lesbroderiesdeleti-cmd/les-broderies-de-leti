@@ -1,69 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- Page d'accueil -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-
-    <!-- Images de la galerie principale -->
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/anniversaire1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/naissance1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/mariage1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/entreprise1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/portrait1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/deco1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/perso1.jpg</image:loc>
-    </image:image>
-
-    <!-- Images des villes -->
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/lucon1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/roche1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/vendee1.jpg</image:loc>
-    </image:image>
-
   </url>
 
-  <!-- Page Vendée -->
   <url>
     <loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/ville-vendee.html</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-
-    <!-- Images de la page Vendée -->
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/vendee1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/vendee2.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/vendee3.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://lesbroderiesdeleti-cmd.github.io/les-broderies-de-leti/images/vendee4.jpg</image:loc>
-    </image:image>
   </url>
 
 </urlset>
